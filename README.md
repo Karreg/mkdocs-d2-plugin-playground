@@ -1,0 +1,1 @@
+# mkdocs-d2-plugin-playground
