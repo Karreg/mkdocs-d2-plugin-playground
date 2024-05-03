@@ -1,0 +1,48 @@
+
+# Site name
+site_name: MkDocs D2 Playground
+copyright: '© 2024'
+
+site_dir: 'public'
+
+theme:
+  name: 'material'
+  palette:
+    scheme: slate
+    primary: teal
+  features:
+    #- navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.superfences
+
+plugins:
+  - d2:
+      theme: 104 # See https://d2lang.com/tour/themes
+      layout: elk
+      sketch: true
+      pad: 10
+      scale: 1.2
+  - search
+  - tags:
+      tags_file: blog/tags.md
+  - blog:
+      blog_toc: true
+      post_url_date_format: yyyy/MM
+      post_excerpt: required
+      archive: true
+      archive_name: Archives
+
+nav:
+  - Blog: 
+    - blog/index.md
+    - Tags: blog/tags.md
+
+validation:
+  anchors: warn

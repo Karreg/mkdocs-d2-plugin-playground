@@ -1,0 +1,34 @@
+{
+  "name": "mkdocs-d2-playground",
+  "image": "karreg/mkdocs-devcontainer:d2-latest",
+  "postAttachCommand": ".devcontainer/post_attach.sh",
+  "customizations": {
+      // Configure properties specific to VS Code.
+      "vscode": {
+          "settings": {
+              // LF by default instead of CRLF
+              "files.eol": "\n",
+              // Terminal list
+              "terminal.integrated.profiles.linux": {
+                  "bash": {
+                      "path": "/bin/bash"
+                  },
+                  "zsh": {
+                      "path": "/usr/bin/zsh"
+                  }
+              },
+              // Use bash instead if you feel like it
+              "terminal.integrated.defaultProfile.linux": "zsh"
+          },
+          "extensions": [
+              "terrastruct.d2"
+          ]
+      }
+  },
+  "userEnvProbe": "loginInteractiveShell",
+  "forwardPorts": [
+      8000
+  ],
+  "remoteUser": "gitpod",
+  "containerUser": "gitpod"
+}
