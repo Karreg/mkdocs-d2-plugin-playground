@@ -38,6 +38,8 @@ plugins:
       post_excerpt: required
       archive: true
       archive_name: Archives
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 nav:
   - Blog: 
