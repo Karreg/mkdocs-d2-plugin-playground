@@ -1,4 +1,5 @@
 mkdocs
 mkdocs-material
-mkdocs-d2-plugin==1.4.0rc1
+mkdocs-d2-plugin
 mkdocs-git-revision-date-localized-plugin
+mkdocs-drawio-exporter

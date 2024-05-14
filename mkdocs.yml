@@ -23,6 +23,8 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
+  - drawio-exporter:
+      drawio_args: [--no-sandbox]
   - d2:
       theme: 104 # See https://d2lang.com/tour/themes
       layout: elk
@@ -45,6 +47,7 @@ nav:
   - Blog: 
     - blog/index.md
     - Tags: blog/tags.md
+  - Sample page: sample_page.md
 
 validation:
   anchors: warn

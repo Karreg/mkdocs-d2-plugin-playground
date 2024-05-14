@@ -16,3 +16,7 @@ Sample post for D2 playground.
 Included D2 diagram:
 
 ![D2 diagram](sample_diagram.d2)
+
+Included drawio diagram:
+
+![Drawio diagram](sample_diagram.drawio)

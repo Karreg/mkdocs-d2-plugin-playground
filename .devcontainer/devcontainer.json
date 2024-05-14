@@ -1,6 +1,6 @@
 {
   "name": "mkdocs-d2-playground",
-  "image": "karreg/mkdocs-devcontainer:d2-latest",
+  "image": "karreg/mkdocs-devcontainer:latest",
   "postAttachCommand": ".devcontainer/post_attach.sh",
   "customizations": {
       // Configure properties specific to VS Code.
@@ -21,7 +21,8 @@
               "terminal.integrated.defaultProfile.linux": "zsh"
           },
           "extensions": [
-              "terrastruct.d2"
+              "terrastruct.d2",
+              "hediet.vscode-drawio"
           ]
       }
   },
